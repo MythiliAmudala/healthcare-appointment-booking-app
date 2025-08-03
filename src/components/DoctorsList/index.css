@@ -1,0 +1,247 @@
+/* Doctors List Container */
+.doctors-container {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 80vh;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Search Input */
+.search-input {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 2px 12px rgba(59, 130, 246, 0.2);
+}
+
+/* Doctors Grid */
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Doctor Card */
+.doctor-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Doctor Image - Balanced Height */
+.doctor-images-1 {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* Doctor Details */
+.doctor-details {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.doctor-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.doctor-specialization {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+/* Status */
+.doctor-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+
+.available {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.unavailable {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.status-icon {
+    font-size: 1rem;
+}
+
+.available-icon {
+    color: #2e7d32;
+}
+
+.unavailable-icon {
+    color: #c62828;
+}
+
+/* No Doctors Message */
+.no-doctors-message {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Responsive Media Queries ===== */
+/* Small Mobile (0px to 480px) */
+@media (max-width: 480px) {
+    .doctors-container {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .search-input {
+        margin-bottom: 1.5rem;
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-images-1 {
+        height: 160px;
+    }
+}
+
+/* Tablets (481px to 900px) */
+@media (min-width: 481px) and (max-width: 900px) {
+    .doctors-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+/* Large Desktops (1201px+) */
+@media (min-width: 1201px) {
+    .doctors-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .doctors-grid {
+        gap: 2rem;
+    }
+
+    .doctor-images-1 {
+        height: 250px;
+    }
+}
+/* Doctor Card - Adjusted Dimensions */
+.doctor-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+/* Doctor Image - Compact Size */
+.doctor-images-1 {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* Doctor Details - Compact Padding */
+.doctor-details {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Grid Adjustments */
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.2rem;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .doctor-card {
+        max-width: 100%;
+        /* Full width on mobile */
+    }
+
+    .doctor-images-1 {
+        height: 160px;
+        /* Smaller for mobile */
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    .doctor-images-1 {
+        height: 250px;
+        /* Slightly taller for desktop */
+    }
+}

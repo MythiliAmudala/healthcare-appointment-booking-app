@@ -1,0 +1,145 @@
+.nav-header {
+    background: linear-gradient(to right, #e0f3ff, #f7fbff);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-bar-large-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.website-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f3a5f;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.logo-title-container:hover .brand-name {
+    color: #0b6bc0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: #2d2d2d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0b6bc0;
+}
+
+/* ===== Added Media Queries Only ===== */
+/* Medium Tablets (769px to 900px) */
+@media (min-width: 769px) and (max-width: 900px) {
+    .nav-content {
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-menu-item {
+        font-size: 16px;
+    }
+}
+
+/* Large Tablets (901px to 1024px) */
+@media (min-width: 901px) and (max-width: 1024px) {
+    .nav-content {
+        max-width: 900px;
+    }
+
+    .brand-name {
+        font-size: 22px;
+    }
+}
+
+/* Small Desktops (1025px to 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .nav-content {
+        max-width: 1100px;
+    }
+}
+
+/* Large Desktops (1201px+) */
+@media (min-width: 1201px) {
+    .nav-content {
+        max-width: 1400px;
+    }
+
+    .brand-name {
+        font-size: 26px;
+    }
+
+    .nav-menu {
+        gap: 32px;
+    }
+}
+
+/* Your existing mobile query remains unchanged */
+@media screen and (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .website-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+    }
+}

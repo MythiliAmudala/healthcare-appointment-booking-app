@@ -1,0 +1,120 @@
+.notfound-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f0f4f8, #ffffff);
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.notfound-left {
+    flex: 1;
+    max-width: 500px;
+}
+
+.notfound-heading {
+    font-size: 100px;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notfound-message {
+    font-size: 22px;
+    color: #636e72;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.go-back-button {
+    padding: 14px 32px;
+    font-size: 18px;
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+    background-color: #0652dd;
+}
+
+.notfound-right {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.notfound-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    opacity: 0.95;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+/* ===== Added Media Queries Only ===== */
+/* Medium Tablets (601px to 768px) */
+@media (max-width: 768px) {
+    .notfound-container {
+        padding: 40px 30px;
+        gap: 40px;
+    }
+
+    .notfound-heading {
+        font-size: 80px;
+    }
+
+    .notfound-message {
+        font-size: 20px;
+    }
+}
+
+/* Small Tablets (481px to 600px) */
+@media (max-width: 600px) {
+    .notfound-container {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .notfound-heading {
+        font-size: 60px;
+    }
+
+    .notfound-message {
+        font-size: 18px;
+    }
+
+    .go-back-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile Phones (0px to 480px) */
+@media (max-width: 480px) {
+    .notfound-container {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .notfound-heading {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .notfound-message {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .notfound-image {
+        max-width: 350px;
+    }
+}
