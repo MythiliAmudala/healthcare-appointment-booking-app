@@ -71,14 +71,4 @@ Feel free to reach out for any collaboration or suggestions!
 
 ```
 
----
 
-4. After pasting:
-   - Click the green **"Commit changes…"** button.
-   - Add a commit message like: `Add README.md with project description`
-   - Confirm the commit.
-
----
-
-Let me know if you want to include **screenshots** or your **GitHub Pages live link** — I can update it for you.
-```
