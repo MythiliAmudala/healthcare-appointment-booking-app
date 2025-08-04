@@ -8,8 +8,9 @@ A modern and user-friendly web application that allows users to **browse doctor 
 
 ### 📸 Project Preview
 
-> ![App Preview]Video--->https://drive.google.com/file/d/1YdHy3TxbPxWnHtLKKnxZ6_MSpSyC0Eth/view?usp=drivesdk
-> Project PDF --->https://drive.google.com/file/d/1_JEmcZ8Qqsca8gKDTNJIOG11uxnXVVgr/view?usp=drivesdk
+> ![App Preview]
+Video>https://drive.google.com/file/d/1YdHy3TxbPxWnHtLKKnxZ6_MSpSyC0Eth/view?usp=drivesdk
+ProjectPDF>https://drive.google.com/file/d/1_JEmcZ8Qqsca8gKDTNJIOG11uxnXVVgr/view?usp=drivesdk
 
 ---
 
